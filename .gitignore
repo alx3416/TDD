@@ -6,3 +6,6 @@ __pycache__
 output
 *.pt
 *.hdf5
+*.png
+*.xml
+.idea/misc.xml
