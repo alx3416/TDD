@@ -46,7 +46,7 @@ df = pd.read_csv('diabetes.tab.txt', sep='\t')
 print(df)
 
 print(pd.options.display.max_rows)
-pd.options.display.max_rows = 10
+pd.options.display.max_rows = 15
 print(df.head(10))
 print(df.tail(10))
 print(df.info())
