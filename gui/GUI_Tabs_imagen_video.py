@@ -112,7 +112,7 @@ class App:
             
 
     
-    def __init__(self, window, window_title, image_path="C:\imgs\lena.jpg", video_source=0):
+    def __init__(self, window, window_title, image_path="C:\ITQrepos\TDD\lena.jpg", video_source=0):
         self.window = window
         self.window.title(window_title)
         self.video_source = video_source
@@ -193,7 +193,7 @@ class App:
         self.btn_origv.grid(row = 2, column = 1, sticky = W, pady = 2)
         
         # Botón para bordes
-        icon5=PIL.ImageTk.PhotoImage(file="edges.png")
+        icon5=PIL.ImageTk.PhotoImage(file="C:\ITQrepos\TDD\lena.jpg")
         self.btn_edgev=tkinter.Button(self.TAB2, image=icon5, width=64, command=self.edge_imagev)
         self.btn_edgev.grid(row = 2, column = 0, sticky = W, pady = 2)
 
