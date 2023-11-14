@@ -5,19 +5,46 @@ def get_hypotenuse(side1, side2):
     hypotenuse = mt.sqrt((side1 * side1) + (side2 * side2))
     return hypotenuse
 
+# Utiliza map para crear una lista que contenga el doble de cada elemento de otra lista dada
 
-def create_sequence_list(begin, end):
-    sequence_list = []
-    for value in range(begin, end):
-        sequence_list.append(value)
-    return sequence_list
+myList = [1, 2, 3, 4]
+def duplicate(n):
+    return n * 2
 
+result = map(duplicate, myList)
+print(list(result))
 
-def add_value_list(my_list, value):
-    new_list = []
-    for list_element in my_list:
-        new_list.append(list_element * value)
-    return new_list
+# Utiliza filter para obtener lista de numeros impares
+
+ages = [2, 8, 17, 31, 22, 32]
+
+def getOdds(x):
+  if x % 2 == 0:
+    return False
+  else:
+    return True
+
+nones = filter(getOdds, ages)
+print(list(nones))
+
+# Utiliza reduce para la suma acumulativa de una lista de numeros
+
+import functools
+numeros = [1, 2, 3, 4, 5]
+acumulador = functools.reduce(lambda a, b: a+b, numeros)
+print(acumulador)
+
+# Utiliza map para crear lista de longitudes de palabras a partir de lista de palabras
+
+# Utiliza filter para obtener una lista de palabras que tengan mas de cierta longitud de una lista dada
+
+# Utiliza reduce para encontrar el producto de todos los elementos de una lista de numeros
+
+# Utiliza map para convertir todas las palabras de una lista a mayusculas
+
+# Utiliza filter para obtener los numeros primos de una lista
+
+# Abrir un archivo y almacenar en un diccionario como clave, cada palabra del archivo y valor la cantidad de veces que se repite
 
 
 class GeometricShape:

@@ -2,6 +2,12 @@ from unittest import TestCase
 import utils.misc as ut
 
 
+class Test(TestCase):
+    def test_get_hypotenuse(self):
+        result = ut.get_hypotenuse(3, 4)
+        self.assertAlmostEqual(5, result, 2)
+
+
 class TestGeometricShape(TestCase):
     def test_get_area(self):
         shape = ut.GeometricShape(2, 4)
